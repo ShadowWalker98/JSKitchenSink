@@ -44,13 +44,21 @@ console.log(Object.assign(pet, {
 pet.name = "Buster"
 pet.breed = "German Shepherd"
 
-
+len = getLength("Hello World");
+if(len % 2 == 0) {
+    console.log("The world is nice and even");
+} else {
+    console.log("The world is an odd place");
+}
 
 
 
 
 // function definitions:
 
+function getLength(name) {
+    return name.length;
+}
 // function to alert browser with hello world
 function sayHello() {
     alert("Hello World");
